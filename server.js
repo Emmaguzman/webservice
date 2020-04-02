@@ -27,5 +27,5 @@ app.get("/about", (req, res) => {
 //     res.send(salida)
 // });
 app.listen(port, () => {
-    console.log("escuchando el puertazo 3000");
+    console.log(`escuchando puertazo ${port}`);
 });
