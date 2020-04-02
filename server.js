@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
         nombre: 'emmanuel'
     });
 });
-
+const port = process.env.PORT || 3000;
 app.get("/about", (req, res) => {
     res.render("about");
 });
@@ -26,6 +26,6 @@ app.get("/about", (req, res) => {
 //     }
 //     res.send(salida)
 // });
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("escuchando el puertazo 3000");
 });
